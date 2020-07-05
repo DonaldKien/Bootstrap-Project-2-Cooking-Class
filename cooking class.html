@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<title>HTML & CSS Recap</title>
+
+	<style type="text/css">
+
+        body{
+            background-image: url(1.jpg);
+            padding-top: 20px;
+		}
+        #head ul{
+            background-color: grey;
+            text-align:left;
+            width: 960px;
+        }
+        #head ul li{
+            display: inline-block;
+            padding: 2px 10px 8px 10px;
+         }
+        #head ul li a{
+            color: white;
+          }
+        #head ul li a:hover{
+            text-decoration: none;
+            color: black;
+        }
+        #content{
+            background-color: white;
+            width: 960px;
+        }
+        #content{
+            margin-top: -20px;
+            padding: 20px;
+        }
+        #box1 img{
+            width: 400px;
+        }
+        .card{
+            margin-bottom: 20px;
+        }
+        .recipeTitle{
+            font-size: 24px;
+            margin-bottom: -10px;
+        }
+        #para1 p{
+            color:  #654321 ;
+            display: inline-block;
+        }
+        .duration{
+            color: #E75480 !important;
+        }
+        #popularRecipiesList{
+            list-style-type: none;
+            color: #E75480;
+            margin-left: -30px;
+        }
+        #popularRecipiesList li{
+            border-bottom: 1px solid #C8C8C8;
+            padding: 15px 0px;
+            text-decoration: none;
+        }
+        #popularRecipiesList li a{
+            color: #E75480;
+        }
+        #popularRecipies, #contact{
+            font-size: 24px;
+            color: #E75480;
+        }
+        #popularContact{
+            border-left: 1px solid #C8C8C8;
+        }
+        footer{
+            background-color: grey;
+            width: 960px;
+            color: white
+        }
+
+
+
+	</style>
+</head>
+<body>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <div class="container">
+
+        <div id="head">
+            <img src="header.jpg" id="header" width="960px">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">classes</a></li>
+                <li><a href="#">catering</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div><!--End og Header-->
+
+
+        <div id="content">
+
+            <div class="row">
+                <div class="col-9">
+
+                    <div class="row">
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div id="box1">
+                                    <img src="bok-choi.jpg" class="img-fluid" >
+                                        <figcaption>Bok Choi</figcaption>
+                                </div>
+                            </div>                                     
+                        </div><!--End of Col-6-->
+
+                        <div id="para1" class="col-6">
+                            <p class="recipeTitle">Japanese Vegetarian</p>
+                            <p class="duration">Five week course in London</p>
+                            <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes</p>
+                        </div><!--End of Col-6-->
+
+                    </div><!--End of Row-->
+
+                    <div class="row">
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div id="box1">
+                                    <img src="teriyaki.jpg" class="img-fluid">
+                                    <figcaption>Teriyaki Sauce</figcaption>
+                                </div>
+                            </div>  
+                        </div><!--End of Col-6-->
+
+                        <div class="col-6" id="para1">
+                            <p class="recipeTitle">Sauces Masterclass</p>
+                            <p class="duration">One day workshop</p>
+                            <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+                        </div><!--End of Col-6-->
+
+                    </div><!--End of Row-->
+
+                </div><!--End of Col-8-->
+
+
+                <div class="col-3">
+
+                    <div class="row">
+
+                        <div class="col-12" id="popularContact">
+                            <h1  id="popularRecipies">Popular Recipies</h1>
+                                <ul id="popularRecipiesList">
+                                    <li><a href="#">Yakitori (grilled chicken)</a></li>
+                                    <li><a href="#">Tsukune (minced chicken patties)</a></li>
+                                    <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
+                                    <li><a href="#">Mizutaki (chicken stew)</a></li>
+                                </ul>
+                            <h2 id="contact">Contact</h2>
+                                <p>Yoko's Kitchen 27 Redchurch Street Shoreditch London E2 7DP</p>          
+                        </div><!--End of Col-12-->
+
+                    </div><!--End of Row-->
+
+                </div><!--End of Col-4-->
+
+            </div><!--End of Row-->
+                
+        </div><!--End of Content-->
+
+        <footer>
+            <p class="py-2 px-3"><strong>© 2011 Yoko's Kitchen</strong></p>
+        </footer>
+
+    </div><!--End of Container-->
+
+</body>
+
+</html>
